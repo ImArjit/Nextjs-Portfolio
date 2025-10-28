@@ -1,9 +1,10 @@
 import { assets } from "@/assets/assets";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 const Navbar = () => {
+  const [iScroll, setIsScroll] = useState(false);
   const sideMenuRef = useRef();
 
   const openMenu = () => {
@@ -12,6 +13,20 @@ const Navbar = () => {
   const closeMenu = () => {
     sideMenuRef.current.style.transform = "translateX(16rem)";
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScroll(true);
+      } else {
+        setIsScroll(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <>
@@ -22,7 +37,11 @@ const Navbar = () => {
           className="w-full"
         />
       </div>
-      <nav className="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
+      <nav
+        className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${
+          iScroll ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm" : ""
+        }`}
+      >
         <Link href="#top">
           <Image
             src={assets.logo}
@@ -31,7 +50,11 @@ const Navbar = () => {
           />
         </Link>
 
-        <ul className="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50">
+        <ul
+          className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${
+            iScroll ? "" : "bg-white shadow-sm bg-opacity-50"
+          }`}
+        >
           <li>
             <Link className="font-ovo" href={"#top"}>
               Home
