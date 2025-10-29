@@ -15,16 +15,13 @@ const Navbar = () => {
   };
 
   useEffect(() => {
+    if (typeof window === "undefined") return;
+
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScroll(true);
-      } else {
-        setIsScroll(false);
-      }
+      setIsScroll(window.scrollY > 50);
     };
 
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
