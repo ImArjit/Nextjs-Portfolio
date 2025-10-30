@@ -32,7 +32,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="w-full px-[12%] text-center py-20 scroll-mt-20 from-white to-gray-50"
+      className="w-full px-[12%] text-center py-20 scroll-mt-20 bg-white"
     >
       <h4 className="text-lg font-ovo text-gray-600 tracking-wide">
         Connect with me

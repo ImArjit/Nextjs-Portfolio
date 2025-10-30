@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 
-const Navbar = ({ isDarkMode, setIsDarkMode }) => {
+const Navbar = () => {
   const [iScroll, setIsScroll] = useState(false);
   const sideMenuRef = useRef();
 
@@ -27,7 +27,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
 
   return (
     <>
-      <div className="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden">
+      <div className="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] bg-white">
         <Image
           src={assets.header_bg_color}
           alt="header_bg_color"
@@ -41,8 +41,8 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
       >
         <Link href="#top">
           <Image
-            src={isDarkMode ? assets.logo_dark : assets.logo}
-            alt={isDarkMode ? "Logo_Dark" : "Logo"}
+            src={assets.logo}
+            alt={"Logo"}
             className="w-28 cursor-pointer mr-14"
           />
         </Link>
@@ -96,18 +96,14 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
           >
             Contact{" "}
             <Image
-              src={isDarkMode ? assets.arrow_icon_dark : assets.arrow_icon}
-              alt={isDarkMode ? "Dark_Arrow" : "Light_Arrow"}
+              src={assets.arrow_icon}
+              alt={"Light_Arrow"}
               className="w-3"
             />
           </Link>
 
           <button className="block md:hidden ml-3" onClick={openMenu}>
-            <Image
-              src={isDarkMode ? assets.menu_white : assets.menu_black}
-              alt={isDarkMode ? "Menu_White" : "Menu_Black"}
-              className="w-6"
-            />
+            <Image src={assets.menu_black} alt={"Menu_Black"} className="w-6" />
           </button>
         </div>
 
@@ -118,8 +114,8 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
         >
           <div className="absolute right-6 top-6" onClick={closeMenu}>
             <Image
-              src={isDarkMode ? assets.close_white : assets.close_black}
-              alt={isDarkMode ? "Close_White" : "Close_black"}
+              src={assets.close_black}
+              alt={"Close_black"}
               className="w-5 cursor-pointer"
             />
           </div>

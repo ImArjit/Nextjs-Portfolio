@@ -38,7 +38,7 @@ const toolNames = [
 
 export default function About() {
   return (
-    <div id="about" className="w-full px-[12%] py-16 scroll-mt-20">
+    <div id="about" className="w-full px-[12%] bg-white py-16 scroll-mt-20">
       <h2 className="text-center text-5xl font-ovo mb-10">About me</h2>
       <div className="flex flex-col items-center gap-12 text-center">
         <p className="max-w-3xl font-ovo leading-relaxed text-gray-700 text-[17px]">
