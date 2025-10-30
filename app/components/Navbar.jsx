@@ -84,13 +84,13 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
         </ul>
 
         <div className="flex items-center gap-4">
-          <button onClick={() => setIsDarkMode((prev) => !prev)}>
+          {/* <button onClick={() => setIsDarkMode((prev) => !prev)}>
             <Image
               src={isDarkMode ? assets.sun_icon : assets.moon_icon}
               alt={isDarkMode ? "Sun_Icon" : "Moon_Icon"}
               className="w-6"
             />
-          </button>
+          </button> */}
 
           <Link
             href={"#contact"}

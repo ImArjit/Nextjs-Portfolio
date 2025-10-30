@@ -6,7 +6,7 @@ import React from "react";
 const Header = () => {
   return (
     <div className="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
-      <div>
+      <div className="md:mt-20 mt-40">
         <Image
           src={assets.profile_img}
           alt="Profile_Image"
@@ -23,14 +23,11 @@ const Header = () => {
         Frontend Web Developer
       </h1>
       <p className="max-w-2xl mx-auto font-ovo">
-        Results-driven Frontend Developer with 1.8+ years of hands-on experience
-        in designing, developing, and optimizing scalable, responsive web
-        applications using React, JavaScript (ES6+), and modern UI frameworks.
-        Proven track record of delivering user-friendly interfaces, integrating
-        RESTful APIs, and collaborating with cross-functional teams to deploy
-        high-quality software. Passionate about performance optimization, clean
-        code, and delivering seamless user experiences in production
-        environments.
+        I’m a Frontend Developer with 1.8+ years of hands-on experience building
+        scalable, high-performance web applications using React and Next.js. I
+        specialize in creating responsive, user-centric interfaces and have
+        industry-level experience working with the MERN stack, integrating APIs,
+        and optimizing UI performance for real-world production environments.
       </p>
 
       <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">

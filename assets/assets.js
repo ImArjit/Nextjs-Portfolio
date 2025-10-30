@@ -6,6 +6,25 @@ import edu_icon_dark from "./edu-icon-dark.png";
 import project_icon from "./project-icon.png";
 import project_icon_dark from "./project-icon-dark.png";
 import vscode from "./vscode.png";
+import css from "./css.png";
+import express from "./express.svg";
+import html from "./html.png";
+import js from "./js.png";
+import next from "./next.svg";
+import nodejs from "./nodejs.png";
+import react from "./react.png";
+import axios from "./axios.png";
+import bootstrap from "./bootstrap.png";
+import chakraui from "./chakraui.png";
+import gsap from "./gsap.png";
+import postman from "./postman.png";
+import reactrouter from "./reactrouter.png";
+import redux from "./redux.png";
+import shadcn from "./shadcn.png";
+import tailwindcss from "./tailwindcss.png";
+import tanstack from "./tanstack.png";
+import thunder from "./thunder.jpeg";
+import zustand from "./zustand.png";
 import firebase from "./firebase.png";
 import figma from "./figma.png";
 import git from "./git.png";
@@ -27,10 +46,12 @@ import menu_black from "./menu-black.png";
 import menu_white from "./menu-white.png";
 import close_black from "./close-black.png";
 import close_white from "./close-white.png";
-import web_icon from "./web-icon.png";
-import mobile_icon from "./mobile-icon.png";
-import ui_icon from "./ui-icon.png";
-import graphics_icon from "./graphics-icon.png";
+import web from "./web.png";
+import page from "./page.png";
+import ui from "./ui.png";
+import seo from "./seo.png";
+import api from "./api.png";
+import mern from "./mern.webp";
 import right_arrow from "./right-arrow.png";
 import send_icon from "./send-icon.png";
 import right_arrow_bold from "./right-arrow-bold.png";
@@ -66,64 +87,118 @@ export const assets = {
   menu_white,
   close_black,
   close_white,
-  web_icon,
-  mobile_icon,
-  ui_icon,
-  graphics_icon,
+  web,
+  page,
+  ui,
+  api,
   right_arrow,
   send_icon,
   right_arrow_bold,
   right_arrow_bold_dark,
+  html,
+  css,
+  js,
+  react,
+  next,
+  nodejs,
+  express,
+  axios,
+  bootstrap,
+  chakraui,
+  gsap,
+  postman,
+  reactrouter,
+  redux,
+  shadcn,
+  tailwindcss,
+  tanstack,
+  thunder,
+  zustand,
+  seo,
+  mern,
 };
 
 export const workData = [
   {
-    title: "Frontend project",
-    description: "Web Design",
-    bgImage: "/work-1.png",
+    title: "E-Commerce",
+    description: "E-commerce with Admin Panel & Payment Gateway",
+    bgImage: "/commerce.png",
+    link: "https://e-commerce-frontend-seven-xi.vercel.app",
   },
   {
-    title: "Geo based app",
-    description: "Mobile App",
-    bgImage: "/work-2.png",
+    title: "Instagram Clone",
+    description: "Full Stack Social Media Platform",
+    bgImage: "/insta.webp",
+    link: "https://arjit-post-app.vercel.app/auth",
   },
   {
-    title: "Photography site",
-    description: "Web Design",
-    bgImage: "/work-3.png",
+    title: "Broodl",
+    description: "Help track your mood! With Authentication",
+    bgImage: "/broodl.png",
+    link: "https://arjit-broodl-app.vercel.app/",
   },
   {
-    title: "UI/UX designing",
-    description: "UI/UX Design",
-    bgImage: "/work-4.png",
+    title: "Youtube Clone",
+    description: "Featuring voice search, dark/light themes, video browsing",
+    bgImage: "/youtube.png",
+    link: "https://arjit-streaming.vercel.app/",
+  },
+  {
+    title: "Chat App",
+    description:
+      "Featuring a messanger app with voice search message capability",
+    bgImage: "/chat.jpg",
+    link: "https://chat-app-ar-c43d1.web.app/",
+  },
+  {
+    title: "IMTS Institute ",
+    description: "EdTech Platform (Freelance Project)",
+    bgImage: "/imts.png",
+    link: "https://imtsinstitute.com",
   },
 ];
 
 export const serviceData = [
   {
-    icon: assets.web_icon,
-    title: "Web design",
-    description: "Web development is the process of building, programming...",
-    link: "",
-  },
-  {
-    icon: assets.mobile_icon,
-    title: "Mobile app",
+    icon: assets.web,
+    title: "Responsive Web Development",
     description:
-      "Mobile app development involves creating software for mobile devices...",
+      "Crafting pixel-perfect, responsive websites optimized for all devices using React, Next.js, and Tailwind CSS.",
     link: "",
   },
   {
-    icon: assets.ui_icon,
-    title: "UI/UX design",
+    icon: assets.page,
+    title: "Single Page Application (SPA) Development",
     description:
-      "UI/UX design focuses on creating a seamless user experience...",
+      "Developing fast and interactive SPAs with React, React Router, and state management tools like Redux, Zustand, and Tanstack Query.",
     link: "",
   },
   {
-    icon: assets.graphics_icon,
-    title: "Graphics design",
-    description: "Creative design solutions to enhance visual communication...",
+    icon: assets.seo,
+    title: "Performance Optimization & SEO",
+    description:
+      "Improving loading speed, accessibility, and SEO readiness of web applications, especially for Next.js-based projects.",
+    link: "",
+  },
+  {
+    icon: assets.api,
+    title: "API Integration & Data Management",
+    description:
+      "Seamless integration of RESTful APIs and third-party services using Axios, Firebase, or other modern data solutions.",
+    link: "",
+  },
+  {
+    icon: assets.ui,
+    title: "UI/UX Implementation",
+    description:
+      "Turning design concepts from Figma into fully functional, dynamic interfaces with precision & smooth animations. I focus on maintaining design consistency, accessibility, and responsiveness across all screen sizes.",
+    link: "",
+  },
+  {
+    icon: assets.mern,
+    title: "Full-Stack MERN Development",
+    description:
+      "End-to-end web app development using MongoDB, Express.js, React, and Node.js — from backend logic to deployment.",
     link: "",
   },
 ];
@@ -150,9 +225,28 @@ export const infoList = [
 ];
 
 export const toolsData = [
+  assets.html,
+  assets.css,
+  assets.js,
+  assets.react,
+  assets.next,
+  assets.nodejs,
+  assets.express,
+  assets.mongodb,
+  assets.axios,
+  assets.bootstrap,
+  assets.chakraui,
+  assets.gsap,
+  assets.postman,
+  assets.reactrouter,
+  assets.redux,
+  assets.shadcn,
+  assets.tailwindcss,
+  assets.tanstack,
+  assets.thunder,
+  assets.zustand,
   assets.vscode,
   assets.firebase,
-  assets.mongodb,
   assets.figma,
   assets.git,
 ];
