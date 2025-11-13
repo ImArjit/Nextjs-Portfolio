@@ -42,14 +42,14 @@ export default function About() {
       <h2 className="text-center text-5xl font-ovo mb-10">About me</h2>
       <div className="flex flex-col items-center gap-12 text-center">
         <p className="max-w-3xl font-ovo leading-relaxed text-gray-700 text-[17px]">
-          Results-driven Frontend Developer with 1.8+ years of hands-on
-          experience in designing, developing, and optimizing scalable,
-          responsive web applications using React, JavaScript (ES6+), and modern
-          UI frameworks. Proven track record of delivering user-friendly
-          interfaces, integrating RESTful APIs, and collaborating with
-          cross-functional teams to deploy high-quality software. Passionate
-          about performance optimization, clean code, and delivering seamless
-          user experiences in production environments.
+          Results-driven Frontend Developer with 2+ years of hands-on experience
+          in designing, developing, and optimizing scalable, responsive web
+          applications using React, JavaScript (ES6+), and modern UI frameworks.
+          Proven track record of delivering user-friendly interfaces,
+          integrating RESTful APIs, and collaborating with cross-functional
+          teams to deploy high-quality software. Passionate about performance
+          optimization, clean code, and delivering seamless user experiences in
+          production environments.
         </p>
         {/* Info Cards */}{" "}
         {/* <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl">

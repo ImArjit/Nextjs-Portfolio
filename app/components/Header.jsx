@@ -23,7 +23,7 @@ const Header = () => {
         Frontend Web Developer
       </h1>
       <p className="max-w-2xl mx-auto font-ovo">
-        I’m a Frontend Developer with 1.8+ years of hands-on experience building
+        I’m a Frontend Developer with 2+ years of hands-on experience building
         scalable, high-performance web applications using React and Next.js. I
         specialize in creating responsive, user-centric interfaces and have
         industry-level experience working with the MERN stack, integrating APIs,
